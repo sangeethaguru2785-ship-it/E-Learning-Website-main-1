@@ -190,11 +190,13 @@
             // Extract the user role
             const userRole = document.getElementById('loginRole').value;
             
-            if (userRole === 'instructor') {
-                window.location.href = 'instructor.html';
-            } else {
-                window.location.href = 'index.html';
-            }
+           if (userRole === "student") {
+    window.location.href = "student-dashboard.html";
+}
+
+if (userRole === "instructor") {
+    window.location.href = "tutor-dashboard.html";
+}
         });
     </script>
 </body>
